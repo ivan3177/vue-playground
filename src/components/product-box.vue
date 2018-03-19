@@ -90,8 +90,8 @@
       line-height: 50px;
       font-size: 1.4rem;
       position: absolute;
-      right: 20px;
-      top: 150px;
+      right: 10px;
+      top: 110px;
       box-shadow: 0 0 4px 2px rgba(80, 80, 80, 0.1);
       cursor: pointer;
       transition: all 0.3s;
@@ -107,6 +107,7 @@
 
     p {
       margin-left: 20px;
+      text-align: left;
     }
 
     p::before {

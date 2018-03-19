@@ -57,9 +57,12 @@
     }
     h4 {
       float: left;
-      line-height: 100px;
-      margin: 0 0 0 20px;
+      line-height: 40px;
+      height: 100px;
+      margin-left: 20px;
+      margin-top: 10px;
       width: 100px;
+
     }
     p {
       float: left;

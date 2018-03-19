@@ -33,6 +33,9 @@
       }
     },
     methods: {
+    },
+    created: function () {
+      document.title = "Index"
     }
   }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="shopping-cart" style="max-width: 760px; margin: 20px auto;">
+  <div id="shopping-cart" style="width: 760px; margin: 20px auto;">
     <div id="product">
       <product-box v-for="item in items" :key="item.id" :item_data="item"/>
     </div>
@@ -61,11 +61,16 @@
         });
         return sum;
       }
+    },
+    created: function () {
+      document.title = "Shopping cart"
     }
   }
 </script>
 
 <style lang="scss" scoped>
+  @import "../assets/defines";
+
   #cart {
     margin-top: 50px;
     overflow: hidden;
@@ -78,17 +83,20 @@
         display: inline-block;
         line-height: 40px;
         margin: 0;
+        float: left;
       }
       #price {
         display: inline-block;
         color: #777777;
-        margin-left: 200px;
+        margin-left: 110px;
+        float: left;
         line-height: 40px;
       }
       #quantity {
         display: inline-block;
         color: #777777;
-        margin-left: 100px;
+        margin-left: 110px;
+        float: left;
         line-height: 40px;
       }
       #total {
@@ -96,10 +104,11 @@
         color: #777777;
         line-height: 40px;
         float: right;
+        margin-right: 15px;
       }
     }
     h5 {
-      font-size: 1.2rem;
+      font-size: $font-size;
       text-align : right;
     }
   }
